@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#CBC4D5"
+    tools:context=".NuevoCurso">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2F1633"
+            android:gravity="center"
+            android:text="NUEVO CURSO"
+            android:textColor="#E8E8E8"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHorario"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Horario"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txtHorario"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese el horario del curso"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#888888" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <TextView
+                android:id="@+id/textNombreCurso"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nombre del Curso"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txtNombreCurso"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese el nombre del curso"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#888888" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnGuardarCurso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:backgroundTint="#CAC3D4"
+                        android:contentDescription="@android:string/ok"
+                        android:onClick="guardarCurso"
+                        android:scaleType="center"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                    <TextView
+                        android:id="@+id/textGuardar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Guardar"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnCancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:backgroundTint="#CAC3D4"
+                        android:contentDescription="@android:string/cancel"
+                        android:onClick="cancelar"
+                        android:scaleType="center"
+                        app:srcCompat="@android:drawable/ic_delete" />
+
+                    <TextView
+                        android:id="@+id/textCancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cancelar"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

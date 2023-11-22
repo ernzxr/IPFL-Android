@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CRUB</string>
+
+    <array name="cursos">
+        <item>PROGRAMACION</item>
+        <item>BASE DE DATPS</item>
+        <item>ROBOTICA</item>
+    </array>
+</resources>

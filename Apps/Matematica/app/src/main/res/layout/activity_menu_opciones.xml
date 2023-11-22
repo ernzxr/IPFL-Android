@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuOpciones">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2F1633"
+            android:fontFamily="@font/dela_gothic_one"
+            android:gravity="center"
+            android:text="OPCIONES"
+            android:textColor="#E8E8E8"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#CBC4D5"
+            android:orientation="vertical">
+
+            <Button
+            android:id="@+id/btnCalculadora"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:onClick="ingresoCalculadora"
+            android:text="Calculadora Matematica" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <Button
+                android:id="@+id/btnCuotas"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:onClick="ingresoCuotas"
+                android:text="Calcular Cuotas" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

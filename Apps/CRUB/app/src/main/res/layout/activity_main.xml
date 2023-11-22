@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#CBC4D5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2F1633"
+            android:gravity="center"
+            android:text="BIENVENIDO"
+            android:textColor="#E8E8E8"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Usuario"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txtUser"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese su usuario"
+                android:inputType="text"
+                android:textColorHint="#888888" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contraseña"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese su contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="#888888" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:onClick="ingresoSistema"
+                android:text="Ingresar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

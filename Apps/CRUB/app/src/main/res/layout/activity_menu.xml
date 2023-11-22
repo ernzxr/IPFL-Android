@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2F1633"
+            android:gravity="center"
+            android:text="OPCIONES"
+            android:textColor="#E8E8E8"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#CBC4D5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCargarCurso"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:onClick="cargarCurso"
+                android:text="Cargar Curso" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <Button
+                android:id="@+id/btnAnotarAlumno"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:onClick="anotarAlumno"
+                android:text="Anotar Alumno" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <Button
+                android:id="@+id/btnVerAlumnos"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:onClick="verAlumnos"
+                android:text="Ver Alumnos" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:onClick="salir"
+                android:text="Salir" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
