@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void ingresoSistema(View view){
+    public void ingresoSistema(View view) {
         //declaracion de variables
         TextView txtUsuario, txtPassword;
         String usuario, password;
@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         password = txtPassword.getText().toString();
 
         //validar ingreso
-        if (usuario.equalsIgnoreCase("admin") && password.equals("123")){
-            Toast.makeText(getApplicationContext(),"Ingresando..", Toast.LENGTH_LONG).show();
+        if (usuario.equalsIgnoreCase("crub") && password.equals("123")) {
+            Toast.makeText(getApplicationContext(), "Ingresando..", Toast.LENGTH_LONG).show();
             //ingresar a una nueva ventana
             Intent intent = new Intent(this, Menu.class);
             startActivity(intent);
+        } else {
+            Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrectos.", Toast.LENGTH_LONG).show();
         }
-        else {
-            Toast.makeText(getApplicationContext(),"Usuario o contraseña incorrectos.", Toast.LENGTH_LONG).show();
-        }
+    }
 }
