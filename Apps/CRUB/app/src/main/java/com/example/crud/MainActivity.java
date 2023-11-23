@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.concurrent.ExecutionException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void ingresoSistema(View view) {
+    public void ingresoSistema(View view) throws ExecutionException, InterruptedException {
         //declaracion de variables
         TextView txtUsuario, txtPassword;
         String usuario, password;
@@ -31,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         //validar ingreso
         if (usuario.equalsIgnoreCase("crub") && password.equals("123")) {
-            Toast.makeText(getApplicationContext(), "Ingresando..", Toast.LENGTH_LONG).show();
+            //conectar a bdd
+            MySQL miDB = new MySQL();
+            Toast.makeText(getApplicationContext(), miDB.execute().get(), Toast.LENGTH_LONG).show();
             //ingresar a una nueva ventana
             Intent intent = new Intent(this, Menu.class);
             startActivity(intent);
