@@ -1,12 +1,10 @@
-package com.example.crud;
+package com.example.crub;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class Menu extends AppCompatActivity {
 

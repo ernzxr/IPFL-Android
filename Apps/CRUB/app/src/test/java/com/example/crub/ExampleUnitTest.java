@@ -1,4 +1,4 @@
-package com.example.crud;
+package com.example.crub;
 
 import org.junit.Test;
 

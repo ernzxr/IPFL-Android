@@ -1,18 +1,19 @@
-package com.example.crud;
+package com.example.crub;
 
 import android.os.AsyncTask;
 import android.util.Log;
-import java.sql.Connection;
-import java.sql.DriverManager;
+
+import java.sql.*;
 
 public class MySQL extends AsyncTask<Void,Void,String> {
     public static Connection conexion = null;
-//    public static Statement sentencia = null;
+    public static String mensaje = "";
+    public static String error = "";
 
     @Override
     protected String doInBackground(Void... voids) {
         //* Conexión a un servidor local, vía su IP
-        String url  = "jdbc:mysql://192.168.25.198:3306/crub";
+        String url = "jdbc:mysql://192.168.1.100:3306/enginetruck";
         String user = "admin";
         String pass = "1234";
 
@@ -24,15 +25,13 @@ public class MySQL extends AsyncTask<Void,Void,String> {
 
             // Intento conexión
             conexion = DriverManager.getConnection(url, user, pass);
-            if (conexion!=null) {
+            if (conexion != null) {
                 mensaje = "Conexión exitosa";
-            }
-            else {
+            } else {
                 mensaje = "Conexion=null";
             }
 
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             mensaje = e.getMessage();
         }
         Log.e("LOG:", mensaje);   // muestra mensaje en la consola

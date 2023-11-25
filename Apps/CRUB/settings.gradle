@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "CRUD"
+rootProject.name = "CRUB"
 include ':app'

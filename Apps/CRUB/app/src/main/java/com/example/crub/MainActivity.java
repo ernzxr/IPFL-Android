@@ -1,4 +1,4 @@
-package com.example.crud;
+package com.example.crub;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -34,8 +34,13 @@ public class MainActivity extends AppCompatActivity {
         //validar ingreso
         if (usuario.equalsIgnoreCase("crub") && password.equals("123")) {
             //conectar a bdd
-            MySQL miDB = new MySQL();
-            Toast.makeText(getApplicationContext(), miDB.execute().get(), Toast.LENGTH_LONG).show();
+            try {
+                MySQL enginetruck = new MySQL();
+                Toast.makeText(getApplicationContext(), enginetruck.execute().get(), Toast.LENGTH_LONG).show();
+            }
+            catch (ExecutionException | InterruptedException e) {
+                e.printStackTrace();
+            }
             //ingresar a una nueva ventana
             Intent intent = new Intent(this, Menu.class);
             startActivity(intent);
