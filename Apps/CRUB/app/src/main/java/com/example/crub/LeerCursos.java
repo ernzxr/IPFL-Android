@@ -11,7 +11,7 @@ public class LeerCursos extends AsyncTask<Void, Void, ArrayList<Curso>> {
 
     @Override
     protected ArrayList<Curso> doInBackground(Void... voids) {
-        ResultSet result = null;
+        ResultSet result;
         ArrayList<Curso> list = new ArrayList<>();
         try {
             Statement st = MySQL.conexion.createStatement();

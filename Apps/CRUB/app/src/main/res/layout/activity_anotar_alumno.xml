@@ -116,8 +116,8 @@
                     android:id="@+id/spinnerCurso"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:entries="@array/cursos"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
             <Space
@@ -139,7 +139,7 @@
                     <ImageButton
                         android:id="@+id/btnGuardarAlumno"
                         android:layout_width="wrap_content"
-                        android:layout_height="36dp"
+                        android:layout_height="48dp"
                         android:backgroundTint="#CAC3D4"
                         android:contentDescription="@android:string/ok"
                         android:onClick="guardarAlumno"
@@ -167,7 +167,7 @@
                     <ImageButton
                         android:id="@+id/btnCancelar"
                         android:layout_width="wrap_content"
-                        android:layout_height="36dp"
+                        android:layout_height="48dp"
                         android:backgroundTint="#CAC3D4"
                         android:contentDescription="@android:string/cancel"
                         android:onClick="cancelar"

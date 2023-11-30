@@ -4,14 +4,14 @@ public class Curso {
     private int idcurso, idinstituto;
     private String horario, nivel;
 
-    public Curso() {
-    }
-
     public Curso(int idcurso, int idinstituto, String horario, String nivel) {
         this.idcurso = idcurso;
         this.idinstituto = idinstituto;
         this.horario = horario;
         this.nivel = nivel;
+    }
+
+    public Curso() {
     }
 
     public int getIdcurso() {
