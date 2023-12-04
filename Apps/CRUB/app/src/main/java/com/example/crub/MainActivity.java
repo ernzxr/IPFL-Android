@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         if (usuario.equalsIgnoreCase("crub") && password.equals("123")) {
             //conectar a bdd
             try {
-                MySQL enginetruck = new MySQL();
-                Toast.makeText(getApplicationContext(), enginetruck.execute().get(), Toast.LENGTH_LONG).show();
+                MySQL crub = new MySQL();
+                Toast.makeText(getApplicationContext(), crub.execute().get(), Toast.LENGTH_LONG).show();
             }
             catch (ExecutionException | InterruptedException e) {
                 e.printStackTrace();

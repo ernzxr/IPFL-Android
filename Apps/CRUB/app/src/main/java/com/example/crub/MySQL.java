@@ -13,7 +13,7 @@ public class MySQL extends AsyncTask<Void,Void,String> {
     @Override
     protected String doInBackground(Void... voids) {
         //* Conexión a un servidor local, vía su IP
-        String url = "jdbc:mysql://192.168.1.100:3306/enginetruck";
+        String url = "jdbc:mysql://192.168.25.157:3306/crub";
         String user = "admin";
         String pass = "1234";
 

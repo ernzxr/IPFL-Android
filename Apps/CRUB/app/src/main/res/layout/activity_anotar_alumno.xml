@@ -142,7 +142,7 @@
                         android:layout_height="48dp"
                         android:backgroundTint="#CAC3D4"
                         android:contentDescription="@android:string/ok"
-                        android:onClick="guardarAlumno"
+                        android:onClick="aceptar"
                         android:scaleType="center"
                         app:srcCompat="@android:drawable/ic_input_add" />
 
