@@ -74,6 +74,33 @@
                 android:layout_height="18dp" />
 
             <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textInstituto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Institutos"
+                    android:textColor="#000000" />
+
+                <Space
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent" />
+
+                <Spinner
+                    android:id="@+id/spinnerInstituto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -88,10 +115,10 @@
                     <ImageButton
                         android:id="@+id/btnGuardarCurso"
                         android:layout_width="wrap_content"
-                        android:layout_height="36dp"
+                        android:layout_height="48dp"
                         android:backgroundTint="#CAC3D4"
                         android:contentDescription="@android:string/ok"
-                        android:onClick="guardarCurso"
+                        android:onClick="aceptar"
                         android:scaleType="center"
                         app:srcCompat="@android:drawable/ic_input_add" />
 
@@ -116,7 +143,7 @@
                     <ImageButton
                         android:id="@+id/btnCancelar"
                         android:layout_width="wrap_content"
-                        android:layout_height="36dp"
+                        android:layout_height="48dp"
                         android:backgroundTint="#CAC3D4"
                         android:contentDescription="@android:string/cancel"
                         android:onClick="cancelar"

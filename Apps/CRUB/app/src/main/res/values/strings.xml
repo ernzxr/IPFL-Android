@@ -1,9 +1,3 @@
 <resources>
     <string name="app_name">CRUB</string>
-
-    <array name="cursos">
-        <item>Programación</item>
-        <item>Base de Datos</item>
-        <item>Robótica</item>
-    </array>
 </resources>
